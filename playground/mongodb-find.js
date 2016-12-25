@@ -1,4 +1,4 @@
-const {MongoClient, ObjectId} = require('mongodb');
+const {MongoClient, ObjectID} = require('mongodb');
 
 MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   if (err) {
@@ -8,7 +8,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   console.log('Successful connected to database');
 
   // db.collection('Todos').find({
-  //   _id: new ObjectId('58601798c7642549b925b657')
+  //   _id: new ObjectID('58601798c7642549b925b657')
   // }).toArray().then((docs) => {
   //   console.log('Todos');
   //   console.log(JSON.stringify(docs, undefined, 2));
