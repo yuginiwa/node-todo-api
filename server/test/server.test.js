@@ -156,7 +156,7 @@ describe('PATCH /todos/:id', () => {
       .send({
         text: todo.text,
         completed: todo.completed
-      })
+      }) 
       .expect(200)
       .expect((res) => {
         expect(res.body.todo.text).toBe(todo.text);
